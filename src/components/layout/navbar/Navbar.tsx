@@ -1,3 +1,4 @@
+import { DropDown, EyeIcon } from "../../icon/Icon";
 import { ExportButton, HeadingOne, NavbarWrapper, PreviewButton } from "./Navbar.styles";
 
 const Navbar: React.FC = () => {
@@ -5,8 +6,8 @@ const Navbar: React.FC = () => {
     <NavbarWrapper>
       <HeadingOne>Theme-Studio</HeadingOne>
       <div>
-        <PreviewButton>Preview</PreviewButton>
-        <ExportButton>Export</ExportButton>
+        <PreviewButton> <EyeIcon color="none"/> Preview</PreviewButton>
+        <ExportButton>Export<DropDown /></ExportButton>
       </div>
     </NavbarWrapper>
   );
