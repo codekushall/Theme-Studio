@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-
 export const Border = styled.div`
-height:100%; 
-width:20%;
+  height: calc(100vh - 64px);
+  width: 20%;
+  position: sticky;
+  top: 64px;
   border-right: 1px solid red;
-
 `;
 
 export const UnorderList = styled.ul`
@@ -14,11 +14,11 @@ export const UnorderList = styled.ul`
 `;
 
 export const HeadingFour = styled.h4`
-   margin:15px;
-   font-size:20px;
+  margin: 15px;
+  font-size: 20px;
 `;
 
 export const NavList = styled.li`
-   padding:12px;
-   font-size: 20px;
+  padding: 12px;
+  font-size: 20px;
 `;

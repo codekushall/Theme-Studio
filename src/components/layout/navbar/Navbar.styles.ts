@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const NavbarWrapper = styled.nav`
   height: 64px;
   width: 100%;
+  position:fixed;
   padding: 0px 40px;
   display: flex;
   justify-content: space-between;

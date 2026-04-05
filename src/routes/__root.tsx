@@ -4,11 +4,13 @@ import Navbar from "../components/layout/navbar/Navbar";
 import LeftSideBar from "../components/sidebar/LeftSidebar";
 import React from "react";
 import styled from "styled-components";
+import RightSidebar from "../components/sidebar/RightSidebar";
 
 const MainContent = styled.div`
-   height:100vh;
+height:100vh;
    width:100%;
    display:flex;
+   position:relative;
 `;
 const RootLayout = () => (
   <React.Fragment>
@@ -16,6 +18,7 @@ const RootLayout = () => (
     <MainContent>
       <LeftSideBar />
       <Outlet />
+      <RightSidebar />
     </MainContent>
     <TanStackRouterDevtools />
   </React.Fragment>
