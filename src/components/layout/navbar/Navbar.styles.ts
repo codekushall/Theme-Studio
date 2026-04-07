@@ -15,7 +15,7 @@ export const NavbarWrapper = styled.nav`
 `;
 export const HeadingOne = styled.h1`
   color:var(--primary-color);
-  font-weight: 800;
+  font-weight: 800px;
 `;
 
 export const ButtonWrapper = styled.div`
