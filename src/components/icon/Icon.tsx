@@ -3,39 +3,28 @@ interface IconProps {
   color?: string;
   className?: string;
 }
-export const DropDown = ({ size = 22, color = "", className }: IconProps) => (
-  <svg
-    fill={color}
-    height={size}
-    width={size}
-    className={className}
-    style={{border:"1px solid red"}}
-    viewBox="0 0 24 24"
+export const DropDown = ({ size = 16, color = "none", className }: IconProps) => (
+    <svg
     xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    fill={color}
+    className={className}
   >
-    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-    <g
-      id="SVGRepo_tracerCarrier"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    ></g>
-    <g id="SVGRepo_iconCarrier">
-      {" "}
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z"
-        fill="#000000"
-      ></path>{" "}
-    </g>
+    <path d="m6 9 6 6 6-6" />
   </svg>
 );
 
-export const EyeIcon = ({ size = 20, color = "", className }: IconProps) => (
+export const EyeIcon = ({ size = 16, color = "", className }: IconProps) => (
   <svg
     width={size}
     height={size}
-    fill = {color}
+    fill={color}
     className={className}
     viewBox="0 0 32 32"
     version="1.1"
@@ -54,13 +43,19 @@ export const EyeIcon = ({ size = 20, color = "", className }: IconProps) => (
     </g>
   </svg>
 );
-export const DownloadIcon = ({ size = 20, color = "", className }: IconProps) => (
+export const DownloadIcon = ({
+  size = 16,
+  color = "#f0f0f0",
+  className,
+}: IconProps) => (
   <svg
     width={size}
     height={size}
     fill={color}
     className={className}
-    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
@@ -70,7 +65,6 @@ export const DownloadIcon = ({ size = 20, color = "", className }: IconProps) =>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
-        fill="#000000"
         fill-rule="evenodd"
         d="M11 2a1 1 0 10-2 0v7.74L5.173 6.26a1 1 0 10-1.346 1.48l5.5 5a1 1 0 001.346 0l5.5-5a1 1 0 00-1.346-1.48L11 9.74V2zm-7.895 9.204A1 1 0 001.5 12v3.867a2.018 2.018 0 002.227 2.002c1.424-.147 3.96-.369 6.273-.369 2.386 0 5.248.236 6.795.383a2.013 2.013 0 002.205-2V12a1 1 0 10-2 0v3.884l-13.895-4.68zm0 0L2.5 11l.605.204zm0 0l13.892 4.683a.019.019 0 01-.007.005h-.006c-1.558-.148-4.499-.392-6.984-.392-2.416 0-5.034.23-6.478.38h-.009a.026.026 0 01-.013-.011V12a.998.998 0 00-.394-.796z"
       ></path>{" "}
@@ -83,7 +77,9 @@ export const SearchIcon = ({ size = 20, color = "", className }: IconProps) => (
     height={size}
     fill={color}
     className={className}
-    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
     <g
       id="SVGRepo_tracerCarrier"

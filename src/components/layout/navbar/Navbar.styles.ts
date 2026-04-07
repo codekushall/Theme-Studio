@@ -14,6 +14,7 @@ export const NavbarWrapper = styled.nav`
   z-index:1000;
 `;
 export const HeadingOne = styled.h1`
+  color:var(--primary-color);
   font-weight: 800;
 `;
 
@@ -25,8 +26,7 @@ export const ButtonWrapper = styled.div`
 `;
 export const PreviewButton = styled.button`
   padding: 8px 12px;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: var(--font-size-sm);
   border: 1px solid var(--border-color);
   border-radius: 6px;
   display: flex;
@@ -37,9 +37,7 @@ export const PreviewButton = styled.button`
 export const ExportButton = styled.button`
   padding: 8px 12px; 
   display: flex;
-  font-size: 16px;
-  font-weight: 800;
-  border: 1px solid;
+  font-size:var(--font-size-sm);
   margin: 0px 0px 0px 10px;
   border: 1px solid var(--border-color);
   border-radius: 6px;

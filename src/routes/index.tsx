@@ -8,12 +8,16 @@ export const Content = styled.div`
   background-color: var(--mainbackground-color);
 `;
 export const MainWrapper = styled.div`
- display:flex;
- 
+ display:flex; 
+ align-items:center;
+ justify-content: between;
+ margin-left:10px;
 
 `;
 export const HeadingTwo = styled.h2`
-  justify-content: center;
+ display:flex;
+ align-items:center;
+ justify-content:center;
 `;
 
 export const Navbar = styled.ul`
@@ -22,6 +26,7 @@ export const Navbar = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-left:200px;
 `;
 export const MainComponentNav = styled.li`
   font: bold;
@@ -42,6 +47,10 @@ function RouteComponent() {
           <MainComponentNav>Contact</MainComponentNav>
         </Navbar>
       </MainWrapper>
+      <h1>Build Something Amazing</h1>
+      <p>Create beautiful websites with our drag and drop builder</p>
+      <button>Get Started</button>
+      <button>Learn More</button>
     </Content>
   );
 }
