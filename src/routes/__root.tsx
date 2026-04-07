@@ -7,10 +7,10 @@ import styled from "styled-components";
 import RightSidebar from "../components/sidebar/RightSidebar";
 
 const MainContent = styled.div`
-height:100vh;
-   width:100%;
-   display:flex;
-   position:relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
 `;
 const RootLayout = () => (
   <React.Fragment>

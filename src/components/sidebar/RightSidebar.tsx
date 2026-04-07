@@ -1,7 +1,10 @@
+import { RightSideContainer } from "./RightSidebar.styles";
+
 const RightSidebar: React.FC = () => {
     return (
-        <div>
+        <RightSideContainer>
             This is Right Sidebar.
-        </div>);
+        </RightSideContainer>
+    );
 };
 export default RightSidebar;
