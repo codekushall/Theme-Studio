@@ -5,7 +5,7 @@ export const Border = styled.div`
   width: 20%;
   position: sticky;
   top: 64px;
-  border-right: 1px solid red;
+  border-right: 1px solid var(--border-color);
 `;
 
 export const UnorderList = styled.ul`

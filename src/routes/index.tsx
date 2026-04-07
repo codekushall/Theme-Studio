@@ -5,8 +5,6 @@ export const Content = styled.div`
   height: calc(100vh - 64px);
   width: 60%;
   top: 64px;
-  position: sticky;
-  border: 1px solid red;
 `;
 
 export const HeadingOne = styled.h1`

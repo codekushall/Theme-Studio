@@ -3,12 +3,15 @@ import styled from "styled-components";
 export const NavbarWrapper = styled.nav`
   height: 64px;
   width: 100%;
-  position:fixed;
+  position: sticky;
+  top: 0;
   padding: 0px 40px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #E0E0E0;
+  border: 1px solid var(--border-color);
   align-items: center;
+  background-color:#ffffff;
+  z-index:1000;
 `;
 export const HeadingOne = styled.h1`
   font-weight: 800;

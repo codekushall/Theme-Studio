@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  position: relative;
-  height: 100%;
-  width: 100%;
+:root{
+  --border-color:#e0e0e0;
 }
