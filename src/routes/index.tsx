@@ -27,7 +27,9 @@ export const Navbar = styled.ul`
   margin-left:220px;
 `;
 export const MainComponentNav = styled.li`
-  font-weight:800px;
+ &:hover{
+ cursor:pointer;
+ }
 `;
 
 export const BodyWrapper = styled.div`
