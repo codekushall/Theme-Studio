@@ -9,6 +9,7 @@ export const DropDown = ({ size = 22, color = "", className }: IconProps) => (
     height={size}
     width={size}
     className={className}
+    style={{border:"1px solid red"}}
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >

@@ -7,3 +7,8 @@ export const RightSideContainer = styled.div`
   top: 64px;
   border-left: 1px solid var(--border-color);
 `;
+export const HeadingFour = styled.h4`
+  border-bottom: 1px solid var(--border-color);
+  margin: 15px;
+  font-size: 20px;
+`;

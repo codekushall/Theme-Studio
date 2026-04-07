@@ -27,7 +27,7 @@ export const PreviewButton = styled.button`
   padding: 8px 12px;
   font-size: 16px;
   font-weight: 800;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -35,15 +35,17 @@ export const PreviewButton = styled.button`
   gap: 4px;
 `;
 export const ExportButton = styled.button`
-  padding: 8px 12px;
+  padding: 8px 12px; 
+  display: flex;
   font-size: 16px;
   font-weight: 800;
   border: 1px solid;
   margin: 0px 0px 0px 10px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap:2px;
+  gap:6px;
+  background-color:var(--primary-color);
+  color:white;
 `;

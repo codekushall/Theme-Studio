@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
       <HeadingOne>Theme-Studio</HeadingOne>
       <ButtonWrapper>
         <PreviewButton> <EyeIcon color="none"/> Preview</PreviewButton>
-        <ExportButton> <DownloadIcon size={18}/> Export<DropDown /></ExportButton>
+        <ExportButton> <DownloadIcon size={18} /> Export<DropDown size={18}/></ExportButton>
       </ButtonWrapper>
     </NavbarWrapper>
   );

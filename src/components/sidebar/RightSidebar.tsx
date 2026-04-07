@@ -1,9 +1,9 @@
-import { RightSideContainer } from "./RightSidebar.styles";
+import { HeadingFour, RightSideContainer } from "./RightSidebar.styles";
 
 const RightSidebar: React.FC = () => {
     return (
         <RightSideContainer>
-            This is Right Sidebar.
+            <HeadingFour>Properties</HeadingFour>
         </RightSideContainer>
     );
 };

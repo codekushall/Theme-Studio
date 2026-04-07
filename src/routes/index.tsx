@@ -5,11 +5,15 @@ export const Content = styled.div`
   height: calc(100vh - 64px);
   width: 60%;
   top: 64px;
+  background-color: var(--mainbackground-color);
 `;
+export const MainWrapper = styled.div`
+ display:flex;
+ 
 
-export const HeadingOne = styled.h1`
-  display: flex;
-  align-items: center;
+`;
+export const HeadingTwo = styled.h2`
+  justify-content: center;
 `;
 
 export const Navbar = styled.ul`
@@ -19,6 +23,9 @@ export const Navbar = styled.ul`
   justify-content: center;
   gap: 20px;
 `;
+export const MainComponentNav = styled.li`
+  font: bold;
+`;
 export const Route = createFileRoute("/")({
   component: RouteComponent,
 });
@@ -26,13 +33,15 @@ export const Route = createFileRoute("/")({
 function RouteComponent() {
   return (
     <Content>
-      <HeadingOne>Brand</HeadingOne>
-      <Navbar>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Features</li>
-        <li>Contact</li>
-      </Navbar>
+      <MainWrapper>
+        <HeadingTwo>Brand</HeadingTwo>
+        <Navbar>
+          <MainComponentNav>Home</MainComponentNav>
+          <MainComponentNav>About Us</MainComponentNav>
+          <MainComponentNav>Features</MainComponentNav>
+          <MainComponentNav>Contact</MainComponentNav>
+        </Navbar>
+      </MainWrapper>
     </Content>
   );
 }
