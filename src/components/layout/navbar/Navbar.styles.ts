@@ -33,21 +33,23 @@ export const PreviewButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 4px;
-
   &:hover {
    cursor: pointer;
   }
 `;
 export const ExportButton = styled.button`
-  padding: 8px 12px; 
+  padding: 8px 12px;
   display: flex;
-  font-size:var(--font-size-sm);
+  font-size: var(--font-size-sm);
   margin: 0px 0px 0px 10px;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   align-items: center;
   justify-content: center;
-  gap:6px;
-  background-color:var(--primary-color);
-  color:white;
+  gap: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
 `;
