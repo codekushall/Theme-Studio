@@ -33,6 +33,10 @@ export const PreviewButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 4px;
+
+  &:hover {
+   cursor: pointer;
+  }
 `;
 export const ExportButton = styled.button`
   padding: 8px 12px; 
