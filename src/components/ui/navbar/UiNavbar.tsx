@@ -1,5 +1,6 @@
 import React from "react";
-import { ButtonOne, HeadingTwo, MainComponentNav, MainWrapper, Navbar } from "./UiNavbar.styles";
+import { ButtonOne, HamButton, HeadingTwo, MainComponentNav, MainWrapper, Navbar } from "./UiNavbar.styles";
+import { HamBurgerIcon } from "../../icon/Icon";
 
 const UiNavbar: React.FC = () => {
   return (
@@ -12,6 +13,10 @@ const UiNavbar: React.FC = () => {
         <MainComponentNav>Contact</MainComponentNav>
       </Navbar>
       <ButtonOne>Get Started</ButtonOne>
+      <HamButton>
+        <HamBurgerIcon />
+      </HamButton>
+      
     </MainWrapper>
   );
 };
