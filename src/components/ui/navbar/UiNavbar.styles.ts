@@ -9,7 +9,13 @@ export const MainWrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
 
-  @media();
+  @media(min-width:768px){
+  padding:0px 32px;
+  }
+
+  @media(min-width:992px){
+  padding: 0px 48px;
+  }
 `;
 export const HeadingTwo = styled.h2`
   color: var(--primary-color);
@@ -50,4 +56,5 @@ export const ButtonOne = styled.button`
   @media (min-width: 992px) {
     display: block;
   }
+
 `;
