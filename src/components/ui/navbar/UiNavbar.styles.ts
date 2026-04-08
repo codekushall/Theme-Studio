@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.div`
+  width: 100%;
   padding: 10px 0px;
   display: flex;
   align-items: center;

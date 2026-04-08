@@ -8,7 +8,6 @@ import {
   PreviewButton,
 } from "./Navbar.styles";
 
-
 const Navbar: React.FC = () => {
   
   return (
