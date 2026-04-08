@@ -6,22 +6,21 @@ import styled from "styled-components";
 import RightSidebar from "../components/sidebar/RightSidebar";
 import React from "react";
 
-const MainContent = styled.div<{ isPreview?: boolean }>`
+const MainContent = styled.div<{ $isPreview?: boolean }>`
   height: 100vh;
   width: 100%;
   position: relative;
-  display: ${(props) => (props.isPreview ? "block" : "flex")};
+  display: ${(props) => (props.$isPreview ? "block" : "flex")};
 `;
 
 const RootLayout = () => {
   const location = useLocation();
   const isPreview = location.pathname === "/preview";
-  console.log(isPreview);
   return (
     <React.Fragment>
       {!isPreview && <Navbar />}
 
-      <MainContent isPreview={isPreview}>
+      <MainContent $isPreview={isPreview}>
         {!isPreview && <LeftSideBar />}
 
         <Outlet />
