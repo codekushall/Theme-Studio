@@ -25,7 +25,5 @@ a{
   text-decoration: none;
 }
 button{
-  &:hover {
-    cursor:pointer;
-  }
+   cursor:pointer;
 }

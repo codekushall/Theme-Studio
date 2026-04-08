@@ -8,21 +8,17 @@ import {
   PreviewButton,
 } from "./Navbar.styles";
 
-interface HeaderProps {
-  isPreview: boolean;
-  setIsPreview: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
-const Navbar: React.FC<HeaderProps> = ({ isPreview, setIsPreview }) => {
-  console.log(isPreview)
+const Navbar: React.FC = () => {
+  
   return (
     <NavbarWrapper>
-      <Link to="/">
+      <Link to="/" >
         <HeadingOne>Theme-Studio</HeadingOne>
       </Link>
 
       <ButtonWrapper>
-        <Link to="/preview" target="_blank" onClick={() => setIsPreview(true)}>
+        <Link to="/preview"  target="_blank">
           <PreviewButton>
             {" "}
             <EyeIcon color="none" /> Preview
